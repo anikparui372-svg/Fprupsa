@@ -16,19 +16,17 @@
   font-family: "Poppins", sans-serif;
 }
 
-    .section {
-      display: none;
-      justify-content: center;
-      align-items: center;
-      width: 100vw;
-      height: 100vh;
-      position: absolute;
-      top: 0;
-      left: 0;
-      flex-direction: column;
-      background: #000;
-      animation: fadeIn 1s ease forwards;
-    }
+   .section {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;            /* 100vw → 100% */
+  min-height: 100vh;      /* 100vh → flexible height */
+  position: relative;     /* absolute → relative */
+  flex-direction: column;
+  background: #000;
+  animation: fadeIn 1s ease forwards;
+   }
 
     @keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
 
